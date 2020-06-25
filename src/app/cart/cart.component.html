@@ -1,3 +1,4 @@
+<div class="Boddy">
 <div class="container">
   <h1>My Shopping Cart</h1>
   <hr>
@@ -5,19 +6,31 @@
 
 
       <div *ngFor='let cart of carts; let i = index'>
-         {{cart.name}} <p></p>
-        <button (click)='toggleDetails(i)' btn->Show details</button>
+        <p> {{cart.name}} </p>
+        <button (click)='toggleDetails(i)' btn-secondary>Show details</button>
         <app-cart-detail *ngIf='cart.showDescription' [cart]='cart' (isComplete)='deleteCart($event,i)'></app-cart-detail>
     </div>
-
-
-  <div class="container">
     <div class="card align-items-center" style="width: 20rem;">
-        <img class="card-img-top" src="" alt="Card image cap">
+        <img class="card-img-top" src="https://s.yimg.com/os/creatr-uploaded-images/2020-06/5f9069d0-a819-11ea-a27f-9bcea2d29df0" alt="Card image cap">
+        <div class="card-block text-center">
+            <h4 class="card-title" btn-primary></h4>
+            <button class="card-text">Add to cart</button>
+        </div>
+</div>
+<div class="card align-items-center" style="width: 20rem;">
+        <img class="card-img-top" src="https://specials-images.forbesimg.com/imageserve/5ece92e389ee2f0006814ead/960x0.jpg?cropX1=0&cropX2=1500&cropY1=0&cropY2=942" alt="Card image cap">
         <div class="card-block text-center">
             <h4 class="card-title"></h4>
-            <img src="" alt="">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button class="card-text">Add to cart</button>
+        </div>
+        </div>
+        <div class="card align-items-center" style="width: 20rem;">
+        <img class="card-img-top" src="https://www.extremetech.com/wp-content/uploads/2019/12/SONATA-hero-option1-764A5360-edit.jpg" alt="Card image cap">
+        <div class="card-block text-center">
+            <h4 class="card-title"></h4>
+               <button class="card-text">Add to cart</button>
+
+        </div>
         </div>
 </div>
 </div>
