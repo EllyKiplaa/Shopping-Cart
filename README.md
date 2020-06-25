@@ -1,5 +1,41 @@
 # Cart
 
+
+### Description
+
+* This app works in a way that user can add items to the cart and display the total amount
+
+## Setup
+* git clone https://github.com/EllyKiplaa/Shopping-Cart
+
+* Extract the cloned file.
+
+* cd to Delani-Studio folder.
+ 
+* Launch index.html file.
+
+## Technologies
+* Html
+* CSS
+* JavaScipt
+* TypeScript
+* Git
+* GitHub
+* Terminal
+
+## Known Bugs
+  - Its functionality to display the total pricing is not working as expected
+
+### Checkout My page
+
+* Here is the link.
+
+### Contact Information
+
+* For more information abou this, you could send an email to ellykiplangat200@gmail.com
+
+MIT Copyright (c)2020 Eli Kiplangat Kirui
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 ## Development server
