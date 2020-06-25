@@ -7,12 +7,15 @@ import { CartComponent } from './cart/cart.component';
 import { CartDetailComponent } from './cart-detail/cart-detail.component';
 import { CartFormComponent } from './cart-form/cart-form.component';
 import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     CartComponent,
     CartDetailComponent,
     CartFormComponent,
+
 
   ],
   imports: [
