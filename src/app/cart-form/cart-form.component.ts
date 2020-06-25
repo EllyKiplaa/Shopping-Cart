@@ -7,7 +7,7 @@ import { Cart } from '../cart';
   styleUrls: ['./cart-form.component.css']
 })
 export class CartFormComponent implements OnInit {
-  newCart = new Cart(0,"","",0);
+  newCart = new Cart(0,"","",0,);
   @Output() addCart = new EventEmitter<Cart>();
 
   submitCart(){
