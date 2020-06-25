@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>My Shopping Cart</h1>
+  <hr>
+<div class="row">  <app-cart-form (addCart)="addNewItem($event)"></app-cart-form>
+
+
+      <div *ngFor='let cart of carts; let i = index'>
+         {{cart.name}} <p></p>
+        <button (click)='toggleDetails(i)' btn->Show details</button>
+        <app-cart-detail *ngIf='cart.showDescription' [cart]='cart' (isComplete)='deleteCart($event,i)'></app-cart-detail>
+    </div>
+
+
+  <div class="container">
+    <div class="card align-items-center" style="width: 20rem;">
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-block text-center">
+            <h4 class="card-title"></h4>
+            <img src="" alt="">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+</div>
+</div>
+
