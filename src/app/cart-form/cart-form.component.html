@@ -1,3 +1,4 @@
+<div class="colorb">
 <div class="container">
   <h2 class="text-center">New item</h2>
   <hr>
@@ -9,10 +10,12 @@
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Item name required</p>
           </div>
-        </div>
-   <label for="Quanity">Quantity</label>
+           <label for="Quanity">Quantity</label>
 
 <input type="number"rows="4"  id="Quantity" [(ngModel)]="newCart.description"  name="Quanity"
        min="10" max="100">
       <button type="submit" class="btn btn-success">Add Item</button>
+        </div>
+
   </form>
+</div>
