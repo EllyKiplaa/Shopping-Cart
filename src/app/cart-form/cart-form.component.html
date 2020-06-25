@@ -7,19 +7,12 @@
           <h2><label for="name">Item Name:</label></h2>
           <input type="text" class="form-control" id="name" [(ngModel)]="newCart.name" name="name" #name='ngModel' required>
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-            <p>Name is required</p>
+            <p>Item name required</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Quantity</label>
-          <select class="form-control" id="exampleFormControlSelect1"rows="4" [(ngModel)]="newCart.description" name="description" #description="ngModel" required>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
+   <label for="tentacles">Quantity</label>
+
+<input type="number"rows="4"  id="tentacles" [(ngModel)]="newCart.description"  name="tentacles"
+       min="10" max="100">
       <button type="submit" class="btn btn-success">Add Item</button>
   </form>
-</div>
